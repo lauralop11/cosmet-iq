@@ -1,6 +1,8 @@
+import Navbar from "../../components/Navbar/Navegation"
+
 function Info(){
   return (
-    <p className='bg-red-500'>Info</p>
+    <Navbar></Navbar>
   )
 }
 export default Info

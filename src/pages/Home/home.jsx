@@ -1,6 +1,14 @@
+import Navbar from "../../components/Navbar/Navegation"
+import Banner from "../../components/Banner"
+
 function Home(){
   return (
-    <p className='bg-red-500'>Home</p>
+    <div>
+       <Navbar/>
+       <Banner/>
+    </div>
+ 
+   
   )
 }
 export default Home
