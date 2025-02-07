@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import "tailwindcss";
+:root{
+  --color-primary: white;
+  --color-seconde:#213F6E;
+}
 @theme {
   --font-playfair-display:"Playfair Display", "sans-serif";
+  --color-seconde:#213F6E;
 }
   body {
     font-family: var(--font-playfair-display);
   }
-
 
 
