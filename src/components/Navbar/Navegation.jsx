@@ -11,7 +11,7 @@ const Navbar = () => {
   ];
 return(
   <nav className="navbar flex justify-between font-playfair-display ">
-    <div className="navbar-logo flex w-full p-2 ">
+    <div className="navbar-logo flex w-full p-4 ">
       <img src={logo} alt="Cosmet+IQ logo" className="w-10 h-10 self-center"/>
       <div className="text-white flex flex-col justify-center">
         <p className="text-2xl font-light ">COSMET+IQ</p>

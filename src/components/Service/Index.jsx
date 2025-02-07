@@ -1,6 +1,17 @@
-function Service(){
+import { Layout } from "../Layout"
+import { Title } from "../Title"
+import logo from '../../assets/logo/Subject.png'
+
+const Service = () => {
   return (
-    <p className='bg-red-500'>Service</p>
+    <Layout>
+      <div id="service">
+        <Title>Nuestros Servicios</Title>
+        <div>
+          
+        </div>
+      </div>
+    </Layout>
   )
 }
 export default Service

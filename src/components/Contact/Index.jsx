@@ -1,6 +1,17 @@
-function Contact(){
+import { Layout } from "../Layout"
+import { Title } from "../Title"
+import logo from '../../assets/logo/Subject.png'
+
+const Contact = () => {
   return (
-    <p className='bg-red-500'>Contact</p>
+    <Layout>
+      <div id="contact">
+        <Title>Contactenos</Title>
+        <div>
+          
+        </div>
+      </div>
+    </Layout>
   )
 }
 export default Contact
