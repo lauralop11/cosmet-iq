@@ -6,7 +6,7 @@ import Contact from "../../components/Contact"
 
 function Home(){
   return (
-    <div id="home" className="overflow-hidden w-full">
+    <div id="home" className="overflow-clip w-screen">
        <Navbar/>
        <Banner/>
        <About/>
