@@ -1,6 +1,6 @@
 export const Layout = ({children}) => {
 return(
-  <div className="flex flex-col w-full ">
+  <div className="border-box flex flex-col w-full ">
     {children}
   </div>
 )

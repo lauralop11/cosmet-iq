@@ -6,7 +6,7 @@ const Info =() => {
     <Layout >
       <div id="info">
         <Title>Acerca de Nosotros</Title>
-        <div className="relative columns-1 md:columns-2 gap-8 mt-3 p-5 px-6 font-[verdana] text-gray-700">
+        <div className="relative columns-1 md:columns-2 gap-8 mt-3 p-5 px-10 font-[verdana] text-gray-700">
           <p className="text-base/7 tracking-wide ">Nos especializamos en brindar
           asesoría experta en asuntos
           regulatorios, implementación de
@@ -37,7 +37,6 @@ const Info =() => {
          </div>
         </div>
         <div className='bg-seconde my-5 w-full h-0.5'> </div>
-
       </div>    
     </Layout>
   )

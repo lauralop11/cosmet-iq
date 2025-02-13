@@ -1,7 +1,9 @@
 import logobanner from '../../assets/img/banner.png'
+import { Layout } from '../Layout'
 
 const Banner = () => {
   return(
+    <Layout>
       <div className="relative w-full h-80 mb-3">
         <div>
           <img src={logobanner} alt="laboratorio quimico" className='w-full h-80 object-cover' />
@@ -13,8 +15,10 @@ const Banner = () => {
           de Empresas del Sector Cosmético.
           </p>
         </div>
-        <div className='bg-seconde my-5 w-full h-0.5'> </div>
       </div>
+      <div className='bg-seconde my-5 w-full h-0.5'> </div>
+    </Layout>
+
   )
 }
 export default Banner
