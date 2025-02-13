@@ -45,6 +45,7 @@ const Service = () => {
       ))}
       </ul>
       </section>
+      <div className='bg-seconde my-5 w-full h-0.5'> </div>
     </Layout>
   )
 }
