@@ -1,34 +1,32 @@
-import { NavLink } from "react-router-dom"
+import { Link } from 'react-scroll';
 import logo from '../../assets/logo/Subject.png'
 import './Navegation.css'
 
 const Navbar = () => {
   let menuRoutes =[
-    {to: '/', text: 'Inicio',},
-    {to: '/info', text: 'Nosotros',},
-    {to: '/service', text: 'Servicios',},
-    {to: '/contact', text: 'Contactenos',},
+    {to: 'home', text: 'Inicio',},
+    {to: 'info', text: 'Nosotros',},
+    {to: 'service', text: 'Servicios',},
+    {to: 'contact', text: 'Contactenos',},
   ];
-  const activeStyle = 'underline underline-offset-4 decoration-white';
 return(
-  <nav className="navbar flex justify-between font-playfair-display">
-    <div className="flex w-full md:justify-start justify-center ">
-      <img src={logo} alt="Cosmet+IQ logo" className="w-20 p-1"/>
-      <div className="text-white self-center">
-        <p>COSMET+IQ</p>
-        <p>Donde la ciencia encuentra la belleza</p>
+  <nav className="navbar flex font-playfair-display ">
+    <div className="navbar-logo flex w-full p-4 ">
+      <img src={logo} alt="Cosmet+IQ logo" className="w-10 h-10 self-center"/>
+      <div className="text-white flex flex-col justify-center">
+        <p className="text-2xl font-light ">COSMET+IQ</p>
+        <p className='-mt-1 font-stretch-expanded italic'>Donde la ciencia encuentra la belleza</p>
       </div>
     </div>
-    <ul className="md:flex hidden justify-end content-center self-center">
+    <ul className="navbar-list md:flex hidden justify-rigth self-center">
       {
         menuRoutes.map((item, index) => 
-          <li key={index}>
-            <NavLink to={item.to} className={({isActive})=> isActive ? activeStyle: undefined}>{item.text}</NavLink>
+          <li key={index} >
+            <Link to={item.to} smooth={true} duration={500} >{item.text}</Link>
           </li>
           )
       }
     </ul>
-   
   </nav>
 )
 }

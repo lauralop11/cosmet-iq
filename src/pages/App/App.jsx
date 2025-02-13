@@ -1,10 +1,10 @@
-import { useRoutes, BrowserRouter } from 'react-router-dom'
 import Home from '../Home/home'
-import Info from '../Info/info'
-import Service from '../Service/service'
-import Contact from '../Contact/contact'
 import './App.css'
 
+/* import Info from '../Info/info'
+import Service from '../Service/service'
+import Contact from '../Contact/contact' */
+/* RUTAS PARA PAGINAS EXTERNAS EN REACT
 const AppRoutes = () => {
     let routes = useRoutes ([
     {path:'/',element:<Home/>},
@@ -13,16 +13,11 @@ const AppRoutes = () => {
     {path:'/contact',element:<Contact/>}
   ])
   return routes
-}
+} */
 
 function App(){
-
   return (
-    <BrowserRouter> 
-      <AppRoutes/>
-    </BrowserRouter>
-   
+      <Home/>
   )
-
 }
 export default App
