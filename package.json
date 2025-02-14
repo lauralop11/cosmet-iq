@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://lauralop11.github.io/cosmet-iq",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
